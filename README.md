@@ -11,7 +11,7 @@ Este proyecto demuestra habilidades de modelado y consultas analíticas compleja
 - Excel/CSV: Fuente de datos original (Raw Data): Customer-Churn-Records.csv
 
 ### 1. Arquitectura y Modelado de Datos 
-A diferencia de un análisis estándar sobre una tabla plana (Excel), en este proyecto se aplicaron principios de **Normalización de Base de Datos**:
+Para simular un entorno profesional, diseñé una arquitectura basada en **Normalización de Base de Datos**:
 Se descompuso la tabla original `RAW` en un modelo relacional de **5 tablas normalizadas**.
 Luego se desarrolló un proceso **ETL (Extract, Transform, Load)** manual utilizando sentencias `INSERT INTO... SELECT` para migrar y estructurar los datos desde la fuente cruda hacia el nuevo modelo relacional.
 Los nombres de las tablas y columnas se han mantenido en **español** para simular un entorno de trabajo real en banca local (LATAM/Perú), donde las bases de datos suelen estar en el idioma nativo.
@@ -33,7 +33,7 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 **Total de Clientes:** 10,000
 **Tasa de Abandono Global:** 20.38% (2,038 clientes abandonaron el banco).
 
-### 2. Análisis Geográfico (El problema alemán)
+### 2. Análisis Geográfico
 Alemania presenta la tasa de fuga más alarmante, duplicando prácticamente a los otros países:
 a) Alemania: 32.44% de abandono (814 de 2509 clientes). **Este será el foco del análisis**
 b) España: 16.67%
@@ -41,7 +41,7 @@ c) Francia: 16.17%
 
 Dentro de Alemania, el género femenino es el más afectado, elevando la tasa de riesgo al **37.55%**.
 
-### 3. Perfil de Riesgo: Mujeres en Alemania
+### 3. Perfil de Riesgo Objetivo: Mujeres en Alemania
 Se realizó un desglose en este segmento crítico, encontrando patrones determinantes:
 
 **A) Cantidad de Productos**
@@ -65,7 +65,9 @@ El riesgo aumenta drásticamente con la edad, alcanzando su pico en la pre-jubil
 ## CONCLUSIÓN:
 
 
+
+
 ---
-**Autor:** [Daniel Alberto Lagos Carrillo]
-*Estudiante de Ingeniería Industrial | Data Analytics Enthusiast*
-[https://www.linkedin.com/in/daniellagos/]
+**Autor:** Daniel Alberto Lagos Carrillo
+
+LinkedIn: https://www.linkedin.com/in/daniellagos/
