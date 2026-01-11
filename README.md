@@ -1,8 +1,10 @@
 # Análisis de deserción de clientes bancarios realizado con herramienta SQL Server.
 
 # Descripción del Proyecto
-Este proyecto analiza la deserción de clientes (Churn) en una entidad bancaria ficticia. El **objetivo principal** es identificar al perfil demográfico de cliente con más riesgo de desertar y los factores de riesgo que lo lleven a abandonar el banco, permitiendo tomar decisiones basadas en datos para mejorar la retención.
-Este proyecto demuestra habilidades de modelado y consultas analíticas complejas utilizando **SQL Server**.
+En este proyecto se realiza un análisis profundo sobre la deserción de clientes (Churn) en una entidad bancaria usando **SQL Server**. A diferencia de un análisis generalista, este trabajo aplica un enfoque quirúrgico para identificar y desglosar el perfil demográfico con la tasa de abandono más crítica del dataset.
+
+El objetivo principal es **identificar el segmento específico donde el banco está perdiendo más capital y clientes**, permitiendo diseñar estrategias de retención de alta precisión y máximo retorno de inversión (ROI).
+
 
 ## Herramientas y Tecnologías: 
 - Visual Studio Code
