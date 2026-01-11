@@ -12,8 +12,8 @@ Este proyecto demuestra habilidades de modelado y consultas analíticas compleja
 
 ### 1. Arquitectura y Modelado de Datos 
 Para simular un entorno profesional, diseñé una arquitectura basada en **Normalización de Base de Datos**:
-Se descompuso la tabla original `RAW` en un modelo relacional de **5 tablas normalizadas**.
-Luego se desarrolló un proceso **ETL (Extract, Transform, Load)** manual utilizando sentencias `INSERT INTO... SELECT` para migrar y estructurar los datos desde la fuente cruda hacia el nuevo modelo relacional.
+Se descompuso la tabla original RAW en un modelo relacional de **5 tablas normalizadas**.
+Luego se desarrolló un proceso **ETL (Extract, Transform, Load)** manual utilizando sentencias INSERT INTO... SELECT para migrar y estructurar los datos desde la fuente cruda hacia el nuevo modelo relacional.
 Los nombres de las tablas y columnas se han mantenido en **español** para simular un entorno de trabajo real en banca local (LATAM/Perú), donde las bases de datos suelen estar en el idioma nativo.
 
 ### 2. Análisis Exploratorio
