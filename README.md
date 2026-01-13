@@ -24,9 +24,10 @@ Uso de funciones de agregación, Joins, CTEs y segmentacion para aislar perfiles
 ## IMPORTANTE: Instrucciones de Ejecución para poder reproducir el análisis
 Dado que el proyecto utiliza una carga manual para asegurar la integridad de los datos, siga estos pasos:
 1. Baje el archivo .csv adjunto en este repositorio (Customer-Churn-Records.csv).
-2. Abra SQL Server y utilice la herramienta **Import Wizard** para cargar el CSV.
-3. Asegúrese de nombrar la tabla de destino exactamente como:[dbo].[Customer-Churn-Records] (El script de análisis depende de este nombre específico para funcionar).
-4. Finalmente abra los archivos archivo .sql y ejecute las consultas para ver el análisis.
+2. Abra SQL Server y cree una base de datos nombrada exactamente como: portafolio (de esto depende el correcto funcionamiento de los scripts). 
+3. En SQL Server utilice la herramienta **Import Wizard** para cargar el CSV.
+4. Asegúrese de nombrar la tabla de destino exactamente como:[dbo].[Customer-Churn-Records] (El script de análisis depende de este nombre específico para funcionar).
+5. Finalmente abra los archivos archivo .sql y ejecute las consultas para ver el análisis.
 
 
 ## HALLAZGOS
@@ -68,6 +69,7 @@ El riesgo aumenta drásticamente con la edad, alcanzando su pico en la pre-jubil
 * **Actividad:** Si bien los clientes inactivos suelen irse más (44.63%), es alarmante que el **29.51% de las clientas ACTIVAS** también abandonan el banco. (1 de cada 3 usuarias activas se va).
 
 ## CONCLUSIÓN:
+
 
 
 
