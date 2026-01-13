@@ -1,10 +1,12 @@
 # Análisis de deserción de clientes bancarios realizado con herramienta SQL Server.
 
 # Descripción del Proyecto
-En este proyecto se realiza un análisis profundo sobre la deserción de clientes (Churn) en una entidad bancaria usando **SQL Server**. A diferencia de un análisis generalista, este trabajo aplica un enfoque quirúrgico para identificar y desglosar el perfil demográfico con la tasa de abandono más crítica del dataset.
+En este proyecto se realiza un análisis Exploratorio de Datos sobre la deserción de clientes (Churn) en una entidad bancaria usando **SQL Server**. A diferencia de un análisis generalista, este trabajo aplica un enfoque quirúrgico para identificar y desglosar el perfil demográfico con la tasa de abandono más crítica del dataset.
 
 El objetivo principal es **identificar el segmento específico donde el banco está perdiendo más capital y clientes**, permitiendo diseñar estrategias de retención de alta precisión y máximo retorno de inversión (ROI).
 
+# Alcance del Proyecto
+Este análisis descriptivo se basa en un dataset estático de clientes bancarios y tiene como objetivo identificar patrones de abandono y segmentos con mayor riesgo de churn. Los resultados se interpretan como asociaciones y se utilizan para generar hipótesis analíticas. Las conclusiones se interpretan como asociaciones propias de un análisis exploratorio.
 
 ## Herramientas y Tecnologías: 
 - Visual Studio Code
@@ -69,6 +71,7 @@ El riesgo aumenta drásticamente con la edad, alcanzando su pico en la pre-jubil
 * **Actividad:** Si bien los clientes inactivos suelen irse más (44.63%), es alarmante que el **29.51% de las clientas ACTIVAS** también abandonan el banco. (1 de cada 3 usuarias activas se va).
 
 ## CONCLUSIÓN:
+
 
 
 
