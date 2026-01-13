@@ -43,9 +43,9 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 
 ### 2. Análisis Geográfico
 Alemania presenta la tasa de fuga más alarmante, duplicando prácticamente a los otros países:
-a) Alemania: 32.44% de abandono (814 de 2509 clientes). **Este será el foco del análisis**
-b) España: 16.67%
-c) Francia: 16.17%
+- Alemania: 32.44% de abandono (814 de 2509 clientes). **Este será el foco del análisis**
+- España: 16.67%
+- Francia: 16.17%
 
 Dentro de Alemania, el género femenino es el más afectado, elevando la tasa de riesgo al **37.55%**.
 
