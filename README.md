@@ -26,7 +26,7 @@ Uso de funciones de agregación, Joins, CTEs y segmentacion para aislar perfiles
 ## IMPORTANTE: Instrucciones de Ejecución para poder reproducir el análisis
 Dado que el proyecto utiliza una carga manual para asegurar la integridad de los datos, siga estos pasos:
 1. Baje el archivo .csv adjunto en este repositorio (Customer-Churn-Records.csv).
-2. Abra SQL Server y cree una base de datos nombrada exactamente como: portafolio (de esto depende el correcto funcionamiento de los scripts). 
+2. Abra SQL Server y cree una base de datos nombrada exactamente como: **portafolio** (de esto depende el correcto funcionamiento de los scripts). 
 3. En SQL Server utilice la herramienta **Import Wizard** para cargar el CSV.
 4. Asegúrese de nombrar la tabla de destino exactamente como:[dbo].[Customer-Churn-Records] (El script de análisis depende de este nombre específico para funcionar).
 5. Finalmente abra los archivos archivo .sql y ejecute las consultas para ver el análisis.
