@@ -31,7 +31,8 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 
 ## HALLAZGOS
 
-<img width="1092" height="624" alt="IMAGEN DASHBOARD" src="https://github.com/user-attachments/assets/1b0a355d-d264-4702-8d10-8ffb8462ddbf" />
+<img width="1352" height="771" alt="IMAGEN DASHBOARD" src="https://github.com/user-attachments/assets/16392759-dc24-44d4-800f-dedced0eb554" />
+
 
 ### 1. Panorama General
 **Total de Clientes:** 10,000
