@@ -31,6 +31,8 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 
 ## HALLAZGOS
 
+<img width="1092" height="624" alt="IMAGEN DASHBOARD" src="https://github.com/user-attachments/assets/1b0a355d-d264-4702-8d10-8ffb8462ddbf" />
+
 ### 1. Panorama General
 **Total de Clientes:** 10,000
 **Tasa de Abandono Global:** 20.38% (2,038 clientes abandonaron el banco).
