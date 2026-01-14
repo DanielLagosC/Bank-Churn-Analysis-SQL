@@ -1,7 +1,8 @@
 -- ================================================================================================
--- Verficación de existencia de NULLS
+-- VERIFICACIÓN DE EXISTENCIA DE NULLS
 -- COMENTARIO: Usé la estructura de SUM (CASE WHEN) para que funcione como un COUNT() pero con
 --             filtro incluido, donde la parte "THEN 1 ELSE 0" marca la pauta de qué sumar y qué no
+-- RESULTADO: Todas las columnas dan 0 como resultado, indicando que no hay existencias de nulls.
 -- ================================================================================================
 SELECT 
        SUM(CASE WHEN CustomerId IS NULL THEN 1 ELSE 0 END) AS Nulos_en_CustomerId, 
@@ -24,7 +25,8 @@ SELECT
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Verificación de que no hay clientes duplicados según CustomerId
+-- VERIFICACIÓN DE QUE NO HAY CLIENTES DUPLICADOS SEGUN CUSTOMERID
+-- RESULTADO: La tabla no tiene ninguna entrada, lo que indica que no existe ningún cliente duplicado
 -- ================================================================================================
 SELECT CustomerId,
        COUNT(*) AS Cantidad_Duplicado
@@ -33,8 +35,12 @@ GROUP BY CustomerId
 HAVING COUNT(*) > 1
 
 -- ================================================================================================
--- Verificación de no duplicados según "el ADN" del cliente, no se tomo en cuenta Surname por precaución 
--- a posible error de tipeo en el nombre (ya sea mala coincidencia de incluso un digito errado)
+-- VERIFICACIÓN DE NO DUPLICADOS SEGÚN LOS ATRIBUTOS DEL CLIENTE
+-- COMENTARIO 1: Se vió pertinente buscar un duplicado teniendo en cuenta todas las columnas
+--               al mismo tiempo, ya que hacía más estricto la identificación.
+-- COMENTARIO 2: No se tomó en cuenta Surname por precaución contra posible error de tipeo en el nombre
+--               (ya sea mala coincidencia de incluso un digito errado) o contra casos de homonimia
+-- RESULTADO: La tabla no tiene ninguna entrada, lo que indica que no existe ningún cliente duplicado
 -- ================================================================================================
 SELECT CreditScore, [Geography], Gender, Age, Tenure, Balance, NumOfProducts, HasCrCard, IsActiveMember, EstimatedSalary, Exited,
        Complain, Satisfaction_Score, Card_Type, Point_Earned, COUNT(*) AS Cantidad_Duplicado
@@ -44,7 +50,7 @@ GROUP BY CreditScore, [Geography], Gender, Age, Tenure, Balance, NumOfProducts, 
 HAVING COUNT(*) > 1
 
 -- ================================================================================================
--- Validación de datos en la columna CreditScore
+-- VALIDACIÓN EN LA COLUMNA CREDITSCORE
 -- ================================================================================================
 -- a) Para demostrar que no hay ningún decimal colado ni negativos
 SELECT CreditScore 
@@ -55,21 +61,21 @@ SELECT MIN(CreditScore) AS Min_CreditScore, MAX(CreditScore) AS Max_CreditScore
 FROM portafolio.dbo.[Customer-Churn-Records];
 
 -- ================================================================================================
--- Validación de datos en la columna Geography
--- Comentario: Se comprueba que no existen errores de tipeo
+-- VALIDACIÓN EN LA COLUMNA GEOGRAPHY
+-- RESULTADO: No hay errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT [Geography]
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna CreditScore
--- Comentario: Se comprueba que no existen errores de tipeo
+-- VALIDACIÓN EN LA COLUMNA GENDER
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT [Gender]
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna Age
+-- VALIDACIÓN EN LA COLUMNA AGE
 -- ================================================================================================
 -- a) Para demostrar que no hay ningún decimal colado ni negativos
 SELECT Age 
@@ -80,7 +86,7 @@ SELECT MIN(Age) AS Min_Age, MAX(Age) AS Max_Age
 FROM portafolio.dbo.[Customer-Churn-Records];
 
 -- ================================================================================================
--- Validación de datos en la columna Tenure 
+-- VALIDACIÓN EN LA COLUMNA TENURE 
 -- ================================================================================================
 -- a) Para demostrar que no hay ningún decimal colado ni negativos
 SELECT Tenure
@@ -92,7 +98,7 @@ FROM portafolio.dbo.[Customer-Churn-Records];
 
 
 -- ================================================================================================
--- Validación de datos en la columna Balance
+-- VALIDACIÓN EN LA COLUMNA BALANCE
 -- ================================================================================================
 -- a) Para demostrar que no hay negativos
 SELECT Balance
@@ -104,29 +110,29 @@ FROM portafolio.dbo.[Customer-Churn-Records];
 
 
 -- ================================================================================================
--- Validación de datos en la columna NumOfProducts
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA NUMOFPRODUCTS
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT NumOfProducts
 FROM portafolio.dbo.[Customer-Churn-Records]
 ORDER BY NumOfProducts ASC
 
 -- ================================================================================================
--- Validación de datos en la columna HasCrCard
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA HASCRCARD 
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT HasCrCard
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna IsActiveMember
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA ISACTIVEMEMBER 
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT IsActiveMember
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna EstimatedSalary
+-- VALIDACIÓN EN LA COLUMNA ESTIMATEDSALARY
 -- ================================================================================================
 -- a) Demostrar que no hay negativos
 SELECT EstimatedSalary
@@ -137,37 +143,37 @@ SELECT MIN(EstimatedSalary) AS Min_Salary, MAX(EstimatedSalary) AS Max_Salary
 FROM portafolio.dbo.[Customer-Churn-Records];
 
 -- ================================================================================================
--- Validación de datos en la columna Exited
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA EXITED
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT Exited
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna Complain
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA COMPLAIN
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT Complain
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 -- ================================================================================================
--- Validación de datos en la columna Satisfaction_Score
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA SATISFACTION_SCORE 
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT Satisfaction_Score
 FROM portafolio.dbo.[Customer-Churn-Records]
 ORDER BY Satisfaction_Score ASC
 
 -- ================================================================================================
--- Validación de datos en la columna Card_Type
--- Comentario: Se comprueba que no existen errores de tipeo 
+-- VALIDACIÓN EN LA COLUMNA CARD_TYPE 
+-- RESULTADO: Se comprueba que no existen errores de tipeo o espacios extra
 -- ================================================================================================
 SELECT DISTINCT Card_Type
 FROM portafolio.dbo.[Customer-Churn-Records]
 
 
 -- ================================================================================================
--- Validación de datos en la columna Point_Earned
+-- VALIDACIÓN EN LA COLUMNA POINT_EARNED 
 -- ================================================================================================
 -- a) Demostrar que no hay negativos
 SELECT Point_Earned

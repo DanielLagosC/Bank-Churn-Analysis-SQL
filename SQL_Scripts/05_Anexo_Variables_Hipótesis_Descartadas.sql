@@ -53,6 +53,9 @@ WHERE Paises = 'Germany' AND Genero = 'Female'
 /*
 --------------------------------------------------------------------------------------------------------------
 1) Tasa de abandono según el Score de Satisfacción
+COMENTARIO: se descartó esta variable ya que no se encontró una variación significativa entre los distintos
+            scores de satisfaccion que pueda tener una clienta alemana, es decir esta variable no influye en 
+            la decisión de abandonar
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT
@@ -67,6 +70,8 @@ SELECT
 /*
 --------------------------------------------------------------------------------------------------------------
 2) Tasa de abandono según la Antiguedad
+COMENTARIO: se descartó por falta de variación entre los distintos años de antiguedad, no hay patrón reconocible
+            o un segmento especial que represente una explicación a la decisión de abandono
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT
@@ -81,6 +86,8 @@ SELECT
 /*
 --------------------------------------------------------------------------------------------------------------
 3) Tasa de abandono según el Score Crediticio
+COMENTARIO: Se descartó la variable por no representar variaciones entre los distintos grupos, a excepción de
+            uno que sí destaca, pero ese resultado diferenciador se puede tomar como un comportamiento esperable
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT  
@@ -95,6 +102,9 @@ ORDER BY Segmentacion_ScoreCreditico;
 /*
 --------------------------------------------------------------------------------------------------------------
 4) Tasa de abandono según si tuvo una Queja
+COMENTARIO: El resultado más redundante y esperado, es la correlación más directa y clara del dataset: casi la
+            la totalidad de las mujeres alemanas que presentaron una queja en el banco, abandonaron.
+            Incluso se podría hipotetizar que la queja es consecuencia a la decisión de abandono.
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT PresentoQueja,
@@ -107,6 +117,8 @@ GROUP BY PresentoQueja     -- Da  un dato redundante pero que igual necesita ser
 /*
 --------------------------------------------------------------------------------------------------------------
 5) Tasa de abandono según su Salario Estimado
+COMENTARIO: Se descartó porque no se encontró un patrón claro o significativo que explique el abandono, no hay
+            variación entre los segmentos.
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT 
@@ -121,6 +133,8 @@ ORDER BY Segmentacion_SalarioEstimado ASC;
 /*
 --------------------------------------------------------------------------------------------------------------
 6) Tasa de abandono según si tiene tarjeta de crédito o no
+COMENTARIO: La tasa de abandono es prácticamente igual si se tiene tarjeta o no, lo que indica que la posesión
+            de una tarjeta no tiene impacto alguno en la decisión de abandonar el banco
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT 
@@ -134,6 +148,8 @@ GROUP BY TieneTarjetaCredito;    --RESULTADO: NADA REVELADOR
 /*
 --------------------------------------------------------------------------------------------------------------
 7) Tasa de abandono según su tipo de tarjeta
+COMENTARIO: No hay variación entre las tasas, lo que indica que el tipo de tarjeta que se posea (o al cual una
+            mujer alemana pueda postular), no tiene impacto significativo en la decisión de abandonar el banco
 --------------------------------------------------------------------------------------------------------------
 */
 SELECT
@@ -142,16 +158,4 @@ SELECT
       COUNT(Abandono) AS CantidadTotal,
       (CAST(SUM(Abandono) AS DECIMAL(10,2))/CAST(COUNT(Abandono) AS DECIMAL(10,2)))*100 AS Tasa_TipoTarjeta
 FROM #TablaTemporal
-GROUP BY TipoTarjeta;      --NADA REVELADOR: Se van por igual proporcion, todos rondan los 37%+-
-
-/*
---------------------------------------------------------------------------------------------------------------
-8) Tasa de abandono según puntaje acumulado
---------------------------------------------------------------------------------------------------------------
-*/
-SELECT Puntos_Acumulados,
-       SUM(Abandono) AS CantidadAbandono,
-       COUNT(Abandono) AS CantidadTotal,
-       (CAST(SUM(Abandono) AS DECIMAL(10,2))/CAST(COUNT(Abandono) AS DECIMAL(10,2)))*100 AS Tasa_Puntos
-FROM #TablaTemporal
-GROUP BY Puntos_Acumulados
+GROUP BY TipoTarjeta;      
