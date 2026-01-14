@@ -2,7 +2,7 @@
 ============================================================================================
 PROYECTO   : Análisis de Retención de Clientes Bancarios 
 AUTOR      : Daniel Alberto Lagos Carrillo
-DESCRIPCIÓN: Scripts de carga des¿ los datos de la tabla RAW a las tablas normalizadas
+DESCRIPCIÓN: Scripts de carga desde los datos de la tabla RAW a las tablas normalizadas
 ============================================================================================
 */
 -- =============================================================================
