@@ -42,8 +42,12 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 - Con esto se determina el segmento en el cual se enfocará el análisis: **Mujeres Alemmanas**
 - **Edad crítica:** contrario a lo que se podría pensar, los jóvenes presentan una mayor lealtad al banco que las personas mayores al tener un mayor promedio de años de antiguedad en el banco, lo que indica que pertenecer a la edad de jubilación, incrementa el riesgo de abandono, llegando a un pico de 73% entre las edades de 50 y 59 años. A esto podría indicar insatisfacción de las mujeres alemanas por los servicios o trato que ofrece el banco en esta etapa de su vida, pudiendo escoger mudarse a otro banco que le brinde más beneficios en su jubilación.
 - **Cantidad de productos (el factor más influyente):** tener 3 y 4 productos dispara el riesgo de abandono hasta llegar al 100%. (Tener en cuenta que el número de muestra es reducido en ambos casos). Y el hecho de tener un producto conlleva un nivel de riesgo alarmante de abandonar el banco (casi 50%).
-- **Balance en la cuenta**: aunque parezca contraintuitivo nuevamente, que una mujer alemana tenga un Balance considerado Alto (entre 100 000 y 150 000) en vez de fidelizarla, incrementa su riesgo de abandono, esto es malo pues indica, además de una pérdida de clientes, una pérdida considerable de capitales.
-- **Puntos de fidelidad acumulados:** 
+- **Balance en la cuenta**: aunque parezca contraintuitivo nuevamente, que una mujer alemana tenga un Balance considerado Alto (entre 100 000 y 150 000) en vez de fidelizarla, incrementa su riesgo de abandono, esto es malo pues indica, además de una pérdida de clientes, una pérdida considerable de capitales, esto puede señalar falta de valor en los servicios y consideraciones del banco conforme se tiene más capital en la cuentas.
+- **Puntos de fidelidad acumulados:** demuestra un incremento de abandono más sutil conforme se tienen más puntos acumulados a partir de los 600 puntos de fidelidad, esto puede señalar falta de utilidad en servicios o paquetes en los cuales se puedan usar o canjear estos puntos. Esto refuerza la hipótesis que dan los anteriores insights, el banco está fallando en ofrecer servicios, consideraciones o atención adecuada al perfil de cliente donde se supone debería reforzar o hasta asegurar la fidelidad de la mujer alemana.
+- **Clientes Activos vs No Activos:** la tasa de abandono alta en los clientes No Activos hasta cierto punto es esperable, ya que no usan el banco, lo crítico aquí es la tasa de abandono que tienen los clientes activos (de un 30%), clientes que, de primeras, no se supone que deberían abandonar tanto el banco, ya que se supone que usan sus servicios con regularidad, este insight es la última señal de insatisfacción de las mujeres alemanas en relación con el producto de valor que ofrece el banco para su segmento específico.
+
+## CONCLUSIONES Y ACCIONES SUGERIDAS:
+
 
 
 
