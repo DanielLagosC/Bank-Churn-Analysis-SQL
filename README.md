@@ -40,44 +40,11 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 - **Zona geográfica crítica: Alemania**, su tasa de abandono duplica a la de otros países.
 - **Dentro de Alemania, el género que presenta mayor proporción de abandono son: las mujeres**.
 - Con esto se determina el segmento en el cual se enfocará el análisis: **Mujeres Alemmanas**
-- **Edad crítica:** contrario a loo que se podría pensar, los jóvenes presentar una mayor lealtad al banco que las personas mayores, pertenecer a la edad de jubilación, incrementa el riesgo de abandono, llegando a un pico de 73% entre las edades de 50 y 59 años. Esto podría indicar insatisfacción de las mujeres alemanas por los servicios o trato que ofrece el banco en esta etapa de su vida, pudiendo escoger mudarse a otro banco que le brinde más beneficios en su jubilación.
+- **Edad crítica:** contrario a lo que se podría pensar, los jóvenes presentan una mayor lealtad al banco que las personas mayores al tener un mayor promedio de años de antiguedad en el banco, lo que indica que pertenecer a la edad de jubilación, incrementa el riesgo de abandono, llegando a un pico de 73% entre las edades de 50 y 59 años. A esto podría indicar insatisfacción de las mujeres alemanas por los servicios o trato que ofrece el banco en esta etapa de su vida, pudiendo escoger mudarse a otro banco que le brinde más beneficios en su jubilación.
 - **Cantidad de productos (el factor más influyente):** tener 3 y 4 productos dispara el riesgo de abandono hasta llegar al 100%. (Tener en cuenta que el número de muestra es reducido en ambos casos). Y el hecho de tener un producto conlleva un nivel de riesgo alarmante de abandonar el banco (casi 50%).
-- **Balance en la cuenta**: aunque parezca contraintuitivo, 
+- **Balance en la cuenta**: aunque parezca contraintuitivo nuevamente, que una mujer alemana tenga un Balance considerado Alto (entre 100 000 y 150 000) en vez de fidelizarla, incrementa su riesgo de abandono, esto es malo pues indica, además de una pérdida de clientes, una pérdida considerable de capitales.
+- **Puntos de fidelidad acumulados:** 
 
-### 1. Panorama General
-**Total de Clientes:** 10,000
-**Tasa de Abandono Global:** 20.38% (2,038 clientes abandonaron el banco).
-
-### 2. Análisis Geográfico
-Alemania presenta la tasa de fuga más alarmante, duplicando prácticamente a los otros países:
-- Alemania: 32.44% de abandono (814 de 2509 clientes). **Este será el foco del análisis**
-- España: 16.67%
-- Francia: 16.17%
-
-Dentro de Alemania, el género femenino es el más afectado, elevando la tasa de riesgo al **37.55%**.
-
-### 3. Perfil de Riesgo Objetivo: Mujeres en Alemania
-Se realizó un desglose en este segmento crítico, encontrando patrones determinantes:
-
-**A) Cantidad de Productos**
-Existe una correlación directa entre 1, 3 y 4 productos y abandonar el banco.
-**La Zona Segura:** Clientes con **2 productos** tienen una tasa de fuga baja (16%).
-**Zona de Peligro:**
-1 Producto: **47.13%** de riesgo.
-3 Productos: **86.79%** de riesgo.
-4 Productos: **100%** de fuga (Abandono total).
-
-**B) Grupos de Edad**
-El riesgo aumenta drásticamente con la edad, alcanzando su pico en la pre-jubilación:
-**40-49 años:** 48% de tasa de abandono.
-**50-59 años:** 73% de tasa de abandono
-**60-69 años:** 60% de tasa de abandono.
-
-**C) Comportamiento Financiero**
-* **Balance:** Sorprendentemente, las clientas con **Balance Alto** (100k - 150k) tienen casi el doble de riesgo de irse (43.78%) comparado con saldos menores.
-* **Actividad:** Si bien los clientes inactivos suelen irse más (44.63%), es alarmante que el **29.51% de las clientas ACTIVAS** también abandonan el banco. (1 de cada 3 usuarias activas se va).
-
-## CONCLUSIÓN:
 
 
 
