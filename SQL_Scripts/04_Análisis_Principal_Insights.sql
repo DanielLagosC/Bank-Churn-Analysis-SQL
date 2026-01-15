@@ -1,6 +1,6 @@
 /*
 ================================================================================================
-PROYECTO   : Análisis de Retención de Clientes Bancarios 
+PROYECTO   : Análisis de Abandono de Clientes Bancarios 
 AUTOR      : Daniel Alberto Lagos Carrillo
 DESCRIPCIÓN: Script maestro de análisis exploratorio (EDA) y detección de patrones de abandono.
 ================================================================================================
