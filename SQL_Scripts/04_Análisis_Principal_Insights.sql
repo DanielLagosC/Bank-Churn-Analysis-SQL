@@ -75,10 +75,13 @@ GROUP BY Cant_de_Prod;
 
 -- 5.2. Impacto según segmentación por edad
 -- INSIGHT: Los grupos de edades que van desde los 40 hasta los 69 demuestran altos niveles de abandono, 
---          destacar que coincide con la etapa de jubilación de las clientas.
+--          destacar que coincide con la etapa de jubilación de las clientas. Además destacar
+--          hecho de que al mismo tiempo registran un promedio de años de antiguedad menor a otros grupos
+--          de edad.
 WITH Segmentacion_Edad AS(
     SELECT
         Abandono, 
+        Antiguedad,
         CASE
         WHEN Edad < 30  THEN '18-29'
         WHEN Edad < 40 THEN '30-39'
@@ -94,6 +97,7 @@ WITH Segmentacion_Edad AS(
 )
 SELECT  
         Segmentacion_Edad,
+        AVG(Antiguedad) AS PromedioAñosAntiguedad,
         SUM(Abandono) AS CantidadAbandono,
         COUNT(Abandono) AS CantidadTotal,
         (CAST(SUM(Abandono) AS DECIMAL(10,2))/CAST(COUNT(Abandono) AS DECIMAL(10,2)))*100 AS tasa_edad
