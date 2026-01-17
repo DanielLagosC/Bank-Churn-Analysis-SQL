@@ -18,6 +18,7 @@ Este análisis descriptivo se basa en un dataset estático de clientes bancarios
 - Normalización de base de datos.
 - Realización de proceso ETL para cargar los datos.
 - Uso de funciones de agregación, Joins, CTEs y segmentacion para aislar perfiles de riesgo y calcular la tasa de abandono en cada uno.
+- Uso de Power BI para visualizar resultados.
   
 ### 1. Arquitectura y Modelado de Datos 
 Para simular un entorno profesional, diseñé una arquitectura basada en **Normalización de Base de Datos**:
