@@ -145,7 +145,7 @@ FROM portafolio.dbo.Comportamiento AS com
 JOIN portafolio.dbo.Clientes AS c ON c.ClienteId = com.ClienteId
 JOIN portafolio.dbo.Geografia AS g ON c.Id_Pais = g.Id_Pais
 WHERE Genero = 'Female' AND Paises = 'Germany'
-GROUP BY EsMiembroActivo
+GROUP BY EsMiembroActivo;
 
 -- 5.5. Impacto según los puntos acumulados
 -- Insight: Se observa un incremento en la tasa de abandono conforme va creciendo la cantidad de puntos de fidelidad acumulados,
