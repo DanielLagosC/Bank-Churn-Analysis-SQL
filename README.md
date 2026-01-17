@@ -34,7 +34,7 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 1. Baje el archivo .csv adjunto en este repositorio (Customer-Churn-Records.csv).
 2. Abra SQL Server y cree una base de datos nombrada exactamente como: **portafolio** (de esto depende el correcto funcionamiento de los scripts). 
 3. En SQL Server utilice la herramienta **Import Wizard** para cargar el CSV en la base de datos 'portafolio'.
-4. Asegúrese de nombrar la tabla de destino exactamente como:[dbo].[Customer-Churn-Records] (El script de análisis depende de este nombre específico para funcionar).
+4. Asegúrese de nombrar la tabla de destino exactamente como:[dbo].[Customer-Churn-Records] (El script de verificación de datos, normalización y carga de datos depende de este nombre específico para funcionar).
 5. Finalmente abra los archivos archivo .sql y ejecute las consultas para ver el análisis.
 
 ## 🔎 HALLAZGOS (INSIGHTS)
