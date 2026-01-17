@@ -1,7 +1,7 @@
 # Análisis de abandono de clientes bancarios realizado con herramienta SQL Server y Power BI.
 
 # Descripción del Proyecto
-En este proyecto se realiza un **análisis Exploratorio de Datos para resolver un caso de negocio**: El abandono de clientes (Churn) en una entidad bancaria. A diferencia de un análisis generalista, este trabajo aplica un enfoque en identificar y desglosar el perfil demográfico con la tasa de abandono más crítica del dataset.
+Este proyecto **resuelve un caso de negocio: identificar por qué el banco pierde clientes**. A diferencia de un análisis generalista, este trabajo aplica un enfoque en identificar y desglosar el perfil demográfico con la tasa de abandono más crítica del dataset.
 
 El objetivo principal es **identificar el segmento específico donde el banco está perdiendo más capital y clientes**, permitiendo hipotetizar el escenario que está produciendo esta fuga de clientes y diseñar estrategias de retención de alta precisión y máximo retorno de inversión (ROI).
 
@@ -14,7 +14,7 @@ Este análisis descriptivo se basa en un dataset estático de clientes bancarios
 - Excel/CSV: Fuente de datos original (Raw Data): Customer-Churn-Records.csv
 
 ## Metodología
-- Data Cleaning: Comprobación de correcta integridad y coherencia de datos (descartes de outliers o malos tipeos).
+- Verificación de calidad e integridad de datos
 - Normalización de base de datos.
 - Realización de proceso ETL para cargar los datos.
 - Uso de funciones de agregación, Joins, CTEs y segmentacion para aislar perfiles de riesgo y calcular la tasa de abandono en cada uno.
@@ -51,18 +51,14 @@ Dado que el proyecto utiliza una carga manual para asegurar la integridad de los
 - **Puntos de fidelidad acumulados:** demuestra un incremento de abandono más sutil conforme se tienen más puntos acumulados a partir de los 600 puntos de fidelidad, esto puede señalar falta de utilidad en servicios o paquetes en los cuales se puedan usar o canjear estos puntos. Esto refuerza la hipótesis que dan los anteriores insights, el banco está fallando en ofrecer servicios, consideraciones o atención adecuada al perfil de cliente donde se supone debería reforzar o hasta asegurar la fidelidad de la mujer alemana.
 - **Clientes Activos vs No Activos:** la tasa de abandono alta en los clientes No Activos hasta cierto punto es esperable, ya que no usan el banco, lo crítico aquí es la tasa de abandono que tienen los clientes activos (de un 30%), clientes que, de primeras, no se supone que deberían abandonar tanto el banco, ya que se supone que usan sus servicios con regularidad, este insight es la última señal de insatisfacción de las mujeres alemanas en relación con el producto de valor que ofrece el banco para su segmento específico.
 
-## CONCLUSIONES Y ACCIONES SUGERIDAS:
+## CONCLUSIONES:
 Los hallazgos permiten hipotetizar que el banco sufre de una falta de valor en sus servicios y productos ofrecidos a las mujeres alemanas en general, pero esto se agrava conforme el perfil de la mujer alemana va dirigiendose hacia una etapa donde se supone debería terminar de asegurar su fidelización al banco (tener balance alto en sus cuentas, llegar a una edad de jubilación, acumular la máxima cantidad de puntos de fidelidad), esto señala que el banco no está "recompensando" de alguna manera a estos perfiles de clientas y ellas, al estar buscando mejores tratos, opten por irse a otros bancos que les den mayores beneficios y consideraciones en los servicios brindados, terminando esto en una fuga grande de clientes y, peor aún, de capitales (recordar que las que tienen entre 100 000 y 150 000 son las que más se van) para el banco.
 
+## ACCIONES SUGERIDAS:
 Sabiendo que, de los 2038 clientes que abandonaron en total, 448 son **mujeres alemanas, este segmento de clientes representa poco más de la quinta parte del total de la población que abandono**, se hace pertinente el accionar urgente de programas de fidelización y marketing enfocado especfícamente en este segmento de clientes del banco:
-- Impulsar la venta de productos a las clientas alemanas para que pasen de tener de 1 producto a 2, bajando notoriamente el riesgo de que abandonen el banco ya que estarían en el punto más seguro dentro de este segmento, al mismo tiempo, cancelar el intento de ventas para que de 2 productos, pasen a tener 3 o más productos, ya que los casos han demostrado total disconformidad con la tenencia de mucha cantidad de productos de este banco.
-- Crear programas de jubilación donde se ofrezcan beneficios claros y concretos (estos pueden ser planes de pensiones o rentas vitalicias) y acompañarlos con campañas de marketing para lograr que los clientes se adhieran a estos programas antes de llegar a los 4 años de antiguedad (si se puede mucho antes, mejor) para así reducir el riesgo de abandono tan alto en este grupo.
-- Mejorar los servicios o sistemas de canjes que se ofrecen para darles una mejor utilidad a los puntos de fidelidad que puedan tener los clientes, para así darle un mejor enfoque de gamificación al sistema de puntos de fidelidad del banco y lograr un mayor enganche a los clientes a seguir usando los productos, provocando una mayor retención.
-
-
-
-
-
+- **Optimización de la Venta Cruzada**: Focalizar los esfuerzos comerciales en llevar a las clientas de 1 a 2 productos, donde se observa la mayor tasa de retención (el "punto seguro"). Simultáneamente, se recomienda limitar la venta proactiva de un tercer o cuarto producto en este segmento específico para evitar la saturación, priorizando la calidad del servicio sobre la cantidad de productos contratados.
+- **Estrategia de Retención Preventiva (Etapa de jubilación)"**: Desarrollar programas bancarios especializados en la gestión de ahorros para la jubilación, cuyo objetivo central sea generar valor y rendimientos reales a partir del capital del cliente, ofreciendo beneficios claros de seguridad financiera. Es crucial desplegar campañas de marketing para adherir a los clientes a estos programas antes de que cumplan los 4 años de antigüedad, anticipándose así a la "ventana de riesgo" detectada y creando un vínculo de largo plazo difícil de romper.
+- **Revalorización del Sistema de Puntos y Blindaje de Capitales**: Ante la ineficacia del sistema actual para retener a los segmentos de altos balances (100k - 150k), se propone reestructurar el esquema de fidelización migrando de recompensas genéricas a beneficios financieros tangibles. Esto implica renovar el catálogo de canjes para permitir la conversión de puntos en utilidades reales para este perfil, como exoneración de comisiones administrativas, acceso a tasas preferenciales o bonificaciones directas de saldo. De esta forma, se transforma el sistema de puntos de una "métrica vanidosa" a una barrera de salida efectiva, demostrando al cliente que su lealtad se traduce directamente en la maximización y protección de su patrimonio.
 
 ---
 **Autor:** Daniel Alberto Lagos Carrillo
